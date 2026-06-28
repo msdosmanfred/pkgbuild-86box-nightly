@@ -27,7 +27,7 @@ sha512sums=('94b1f112fd5ec8b51175bffc011e548411b8ed6750dbf3b6dada16fe2d3d9f5a079
   'SKIP')
 
 build() {
-  LDFLAGS='-z now -z shstk' cmake -Bbuild --preset regular --toolchain "cmake/flags-gcc-${CARCH}.cmake" -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on
+  LDFLAGS='-z now -z shstk' cmake -Bbuild --preset regular --toolchain "cmake/flags-gcc-${CARCH}.cmake" -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on -DEMU_BUILD_NUM=1
   cmake --build build
 }
 
