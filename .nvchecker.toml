@@ -1,0 +1,7 @@
+[86box-nightly]
+source = "htmlparser"
+url = "https://ci.86box.net/job/86Box/api/xml"
+xpath = "//build/number"
+is_xml = true
+from_Pattern = '\d'
+prefix = "v"
