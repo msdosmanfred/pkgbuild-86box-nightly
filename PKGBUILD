@@ -1,7 +1,7 @@
 # Maintainer: Alexander Höfer <hoefer9 at gmail dot com>
 pkgname=86box-nightly
 _pkgname=86Box
-pkgver=9453
+pkgver=9455
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 5.1-2 for pentium4 and armv7h
@@ -20,10 +20,10 @@ provides=('86box')
 conflicts=('86box' '86box-git' '86box-odr-git' 'pcbox-git')
 options=('!buildflags')
 source=(
-  "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.bz2"
+  "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.xz"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
-sha512sums=('e3fc2fe115d47cbdeef353015dd734077a2d084406b258d9d6759c0fd5523a3fa1391c3bfd290ecb4a2fa942af8171ddabcaafc4862e5129ae963cfbbecd9034'
+sha512sums=('fb1a9e590f356f28db20ecbbdf02726c371d613c0ae1c2ca7b2e5c905b075c88e7356ced120a36f0e79c57af00cb75318cc6734f87e96c22cef2c7c4ac8d7992'
             'SKIP')
 
 build() {
