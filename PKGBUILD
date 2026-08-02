@@ -23,7 +23,7 @@ source=(
   "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.xz"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
-sha512sums=('6e2c998de80b64a046a93f3b29c153a70e5c657c719197611a121ab804935560523b948e1fb6c612c2b6a499261333d6a65f2444c92a0bd5b68822ed33e3c7f4'
+sha512sums=('c284698875b0d47950304c6096914fd1e4b54c76d0e515f527e624389e9327dec52f879073b219131435da01b1eff67b33cf52d0eb15e3925c909542b8397369'
             'SKIP')
 
 build() {
