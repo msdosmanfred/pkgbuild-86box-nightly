@@ -1,7 +1,7 @@
 # Maintainer: Alexander Höfer <hoefer9 at gmail dot com>
 pkgname=86box-nightly
 _pkgname=86Box
-pkgver=9627
+pkgver=9694
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 5.1-2 for pentium4 and armv7h
@@ -23,11 +23,11 @@ source=(
   "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.xz"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
-sha512sums=('8e2c7c32cc4c2bc39f98b59105d5ccffe04bccc21756745769865dcbdd4e9464afa9accecb4af2f547f714459bda3f852576fc5a1c88ef882eb87c9615de9d73'
-            'SKIP')
+sha512sums=('384214e660abf23dcb7381f2345259ee8f9de82b47c50dc55f0ae1475633a9b4a44e017a75b38770e8c5e176ff0e380972ffcc5ce965381c50ffa2272b31b698'
+  'SKIP')
 
 build() {
-  LDFLAGS='-z now -z shstk' cmake -Bbuild --preset regular --toolchain "cmake/flags-gcc-${CARCH}.cmake" -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on -DDEV_BRANCH=on -D "BUILD_TYPE=alpha" -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"
+  LDFLAGS='-z now -z shstk' cmake -Bbuild --preset regular -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on -DDEV_BRANCH=on -D "BUILD_TYPE=alpha" -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"
   cmake --build build
 }
 
