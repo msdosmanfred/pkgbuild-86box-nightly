@@ -1,6 +1,6 @@
 pkgbase = 86box-nightly
 	pkgdesc = An emulator for classic IBM PC clones
-	pkgver = 9694
+	pkgver = 9699
 	pkgrel = 1
 	url = https://86box.net/
 	arch = x86_64
@@ -48,9 +48,9 @@ pkgbase = 86box-nightly
 	conflicts = 86box-odr-git
 	conflicts = pcbox-git
 	options = !buildflags
-	source = 86box-nightly_9694.txz::https://ci.86box.net/job/86Box/9694/artifact/86Box-Source-b9694.tar.xz
+	source = 86box-nightly_9699.txz::https://ci.86box.net/job/86Box/9699/artifact/86Box-Source-b9699.tar.xz
 	source = 86box-nightly-assets::git+https://github.com/86Box/assets.git
-	sha512sums = 384214e660abf23dcb7381f2345259ee8f9de82b47c50dc55f0ae1475633a9b4a44e017a75b38770e8c5e176ff0e380972ffcc5ce965381c50ffa2272b31b698
+	sha512sums = 8ef0f4760c393c9a375f16e04ce650b4c6440f7b20462047da92e106cc7631c5cd1c40e74d7c05a235afe8ed0b2c18d5c842679959e61584ea78af1c045dc3dd
 	sha512sums = SKIP
 
 pkgname = 86box-nightly
