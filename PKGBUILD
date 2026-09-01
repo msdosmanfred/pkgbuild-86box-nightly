@@ -1,7 +1,7 @@
 # Maintainer: Alexander Höfer <hoefer9 at gmail dot com>
 pkgname=86box-nightly
 _pkgname=86Box
-pkgver=9824
+pkgver=9834
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 5.1-2 for pentium4 and armv7h
@@ -23,7 +23,7 @@ source=(
   "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.xz"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
-sha512sums=('bf3504993ec81f72015bead50c8565897c4781454d8bba4cf2cf5c8e81335fac7639dd918322503fd53fc1c6cae691d1e81f4e1b42138097c77842564ee17617'
+sha512sums=('e735ea0a8ee326cbf8001f6ead8d5f73a521dfe7787a23214aef1f51f04b2ea0cb324ed1934f071a9eaed8bfb4a87db6aa2370af7d55080ec0f60ebfebed9b73'
             'SKIP')
 
 build() {
