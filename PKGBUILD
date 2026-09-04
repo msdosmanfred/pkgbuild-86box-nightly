@@ -29,7 +29,7 @@ sha512sums=('baac6eecc49e2ee75ddc2e97ac729c64a95ec63c3d1fb326f9e093eaaca48e36428
   'SKIP')
 
 build() {
-  LDFLAGS='-z now -z shstk' cmake -Bbuild --preset development -DCMAKE_INSTALL_PREFIX=/usr -DQT=on -DDYNAREC=on -D "BUILD_TYPE=alpha" -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"
+  LDFLAGS='-z now -z shstk' cmake -Bbuild --preset regular -DCMAKE_INSTALL_PREFIX=/usr -DQT=on -DDYNAREC=on -D "BUILD_TYPE=alpha" -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=${pkgver}"
   cmake --build build
 }
 
