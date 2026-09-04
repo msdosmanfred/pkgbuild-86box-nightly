@@ -20,7 +20,7 @@ provides=('86box')
 conflicts=('86box' '86box-git' '86box-odr-git' 'pcbox-git')
 options=('!buildflags')
 source=(
-  "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.bz2"
+  "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.xz"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
 sha512sums=('baac6eecc49e2ee75ddc2e97ac729c64a95ec63c3d1fb326f9e093eaaca48e36428691a7515c8fdc9933efb976aa795c67c83f84a8ce74328f8447593721f075'
