@@ -26,7 +26,7 @@ source=(
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
 sha512sums=('2a82614161bb6d42657e099d1e1ea862a372c63743f600ffe614a707b7575a5205bfc3e580eef5ebb1f1a1fd4a6cc6a83806aefa38892ac0eebefa6c6ab32564'
-  'SKIP')
+            'SKIP')
 
 build() {
   LDFLAGS='-z now -z shstk' cmake -Bbuild --preset regular -DCMAKE_INSTALL_PREFIX=/usr -DQT=on -DNEW_DYNAREC=on -DDEV_BRANCH=on -D "BUILD_TYPE=alpha" -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"
