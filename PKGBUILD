@@ -30,7 +30,7 @@ sha512sums=('d0d01c8c067e0ff85e21926bdf16cc011a05c14cc1e28839f8c4b1bb5de14136478
 
 build() {
   #LDFLAGS='-z now -z shstk'
-  cmake -B build --preset regular -D CMAKE_INSTALL_PREFIX=/usr -D NEW_DYNAREC=ON -D BUILD_TYPE=release -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"
+  cmake -B build --preset regular -D CMAKE_INSTALL_PREFIX=/usr -D NEW_DYNAREC=ON -D BUILD_TYPE=release -D USE_QT6=OFF -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"
   cmake --build build
 }
 
