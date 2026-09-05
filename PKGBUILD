@@ -25,8 +25,8 @@ source=(
   "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.xz"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
-sha512sums=('d0d01c8c067e0ff85e21926bdf16cc011a05c14cc1e28839f8c4b1bb5de141364781cc29bc31f3425c60106045ae268a523d2946f686623a424af4d2392f8b84'
-  'SKIP')
+sha512sums=('15f0b626febaccc99fa9639a315bcf0bbda9bda6e02ecc345cac554fe02ed75ab593085f26a3c8bb0008266e0e935a69599fee13b463fb81cdbdc492458e55aa'
+            'SKIP')
 
 build() {
   LDFLAGS='-z now -z shstk' cmake -B build --preset regular -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release -D NEW_DYNAREC=ON -D "BUILD_TYPE=alpha" -D "EMU_BUILD=build ${pkgver}" -D "EMU_BUILD_NUM=$pkgver"

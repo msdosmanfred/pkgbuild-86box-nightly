@@ -52,7 +52,7 @@ pkgbase = 86box-nightly
 	options = !buildflags
 	source = 86box-nightly_9891.txz::https://ci.86box.net/job/86Box/9891/artifact/86Box-Source-b9891.tar.xz
 	source = 86box-nightly-assets::git+https://github.com/86Box/assets.git
-	sha512sums = d0d01c8c067e0ff85e21926bdf16cc011a05c14cc1e28839f8c4b1bb5de141364781cc29bc31f3425c60106045ae268a523d2946f686623a424af4d2392f8b84
+	sha512sums = 15f0b626febaccc99fa9639a315bcf0bbda9bda6e02ecc345cac554fe02ed75ab593085f26a3c8bb0008266e0e935a69599fee13b463fb81cdbdc492458e55aa
 	sha512sums = SKIP
 
 pkgname = 86box-nightly
