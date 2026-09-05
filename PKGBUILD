@@ -20,7 +20,7 @@ optdepends=(
 )
 provides=('86box')
 conflicts=('86box' '86box-git' '86box-odr-git' 'pcbox-git')
-options=('!buildflags' '!zipman')
+options=('!buildflags')
 source=(
   "${pkgname}_$pkgver.txz::https://ci.86box.net/job/${_pkgname}/$pkgver/artifact/${_pkgname}-Source-b$pkgver.tar.bz2"
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
